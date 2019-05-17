@@ -1,0 +1,52 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FanKit (0.1.0):
+    - FanKit/Core (= 0.1.0)
+    - FanKit/Libs (= 0.1.0)
+    - FanKit/UIKit (= 0.1.0)
+  - FanKit/Core (0.1.0)
+  - FanKit/Libs (0.1.0)
+  - FanKit/UIKit (0.1.0)
+  - IQKeyboardManager (6.2.0)
+  - ReactiveObjC (3.1.0)
+  - SBJson (5.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (>= 3.2.1)
+  - FanKit (>= 0.1.0)
+  - IQKeyboardManager (>= 6.2.0)
+  - ReactiveObjC (>= 3.1.0)
+  - SBJson (~> 5.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - FanKit
+    - IQKeyboardManager
+    - ReactiveObjC
+    - SBJson
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FanKit: 8034fcd546efa6c6b14b659886cb3e489969773a
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  SBJson: 73c848dc34be51fda282fab12bda6c426f5ead08
+
+PODFILE CHECKSUM: 0d58f96532e54caedbd1edbccc6454142d76e171
+
+COCOAPODS: 1.5.3

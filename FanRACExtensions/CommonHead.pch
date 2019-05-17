@@ -1,0 +1,84 @@
+//
+//  CommonHead.pch
+//  Brain
+//
+//  Created by 向阳凡 on 2018/6/5.
+//  Copyright © 2018年 向阳凡. All rights reserved.
+//
+
+#ifndef CommonHead_pch
+#define CommonHead_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+#pragma mark - Unity导入方法
+
+
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <FanKit/FanKit.h>
+#import <FanKit/FanProgressHUD.h>
+#import <FanKit/FanAlertController.h>
+#import "FanAppManager.h"
+
+#endif
+
+
+
+
+#define FanHost      [FanAppManager shareManager].http_host
+
+
+
+#pragma mark - 项目使用时定义的快捷方法和宏，其他的宏在FanKit里面
+
+
+//显示提示信息1.5秒
+
+#define ShowHUDMessage(msg) [FanProgressHUD fan_showHUDWithStatus:msg]
+#define ShowHUDMessageTime(msg,time) [FanProgressHUD fan_showHUDWithStatus:msg afterDelay:time]
+
+//#define ShowHUDErrorMessage(msg) [FanProgressHUD fan_showHUDWithStatus:msg afterDelay:1.5 showType:1]
+//#define ShowHUDErrorMessageTime(msg,time) [FanProgressHUD fan_showHUDWithStatus:msg afterDelay:time showType:1]
+
+#define ShowHUDIMPMessage(msg) [FanProgressHUD fan_showProgressHUD:msg]
+#define ShowHUDIMPMessageTime(msg,time) [FanProgressHUD fan_showProgressHUD:msg afterDelay:time]
+#define HideHUDAll  [FanProgressHUD fan_hideAllProgressHUD]
+
+
+//颜色
+//#define FanColor(r,g,b,a)   [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define ThemeColor        [UIColor colorWithRed:0/255.0 green:160/255.0 blue:232/255.0 alpha:1]  //主题色
+#define ThemeBackColor    [UIColor colorWithRed:191/255.0f green:202/255.0f blue:239/255.0f alpha:1]  //有色背景色
+#define ThemeTextColor    [UIColor colorWithRed:120/255.0 green:124/255.0 blue:176/255.0 alpha:1] //主题有色文字
+#define CRTextColor       [UIColor whiteColor] //白色
+#define CRWhiteColor(a)  [UIColor colorWithWhite:1.0 alpha:a]//白色
+#define ThemeContentColor    [UIColor colorWithRed:109/255.0f green:113/255.0f blue:167/255.0f alpha:1]  //内容框主题背景色
+
+//#define ThemeGradientStartColor    [UIColor colorWithRed:195.0/255.0f green:248.0/255.0f blue:255.0/255.0f alpha:1]  //主题渐变开始背景色
+//#define ThemeGradientEndColor    [UIColor colorWithRed:170.0/255.0f green:186.0/255.0f blue:255.0/255.0f alpha:1]  //主题渐变结束背景色
+#define ThemeGradientStartColor    [UIColor colorWithRed:125.0/255.0f green:160.0/255.0f blue:205.0/255.0f alpha:1]  //主题渐变开始背景色
+#define ThemeGradientEndColor    [UIColor colorWithRed:102.0/255.0f green:111.0/255.0f blue:183.0/255.0f alpha:1]  //主题渐变结束背景色
+
+
+//本地化
+//#define FanLocalizedString(key) [[KYAppManager shareManager].languageBundle localizedStringForKey:key value:nil table:@"Localizable"]
+
+
+
+
+//自定义字体
+//#define FanSystemFontOfSize(fontSize) [UIFont fontWithName:@"" size:fontSize]
+//#define FanBoldFontOfSize(fontSize) [UIFont fontWithName:@"" size:fontSize]
+
+//#define FanSystemFontOfSize(fontSize) [UIFont systemFontOfSize:fontSize]
+//#define FanBoldFontOfSize(fontSize) [UIFont systemFontOfSize:fontSize]
+
+//定义常量宏
+
+#endif /* CommonHead_pch */

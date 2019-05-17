@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496DAE86D905D0AC1F67D5B5 /* Pods_FanRACExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57406FCEF3B60626E2E6833 /* Pods_FanRACExtensions.framework */; };
+		662F3EB1224338E70050C9A1 /* FanAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F3EB0224338E70050C9A1 /* FanAPIManager.m */; };
+		662F3EB422433AD30050C9A1 /* FanAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F3EB322433AD30050C9A1 /* FanAppManager.m */; };
+		662F3EB7224343310050C9A1 /* AFHTTPSessionManager+FanRACExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F3EB6224343310050C9A1 /* AFHTTPSessionManager+FanRACExtension.m */; };
 		666C135D22391EA30034C5A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 666C135C22391EA30034C5A5 /* AppDelegate.m */; };
 		666C136022391EA30034C5A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666C135F22391EA30034C5A5 /* ViewController.m */; };
 		666C136322391EA30034C5A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 666C136122391EA30034C5A5 /* Main.storyboard */; };
@@ -15,6 +19,8 @@
 		666C136B22391EA40034C5A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 666C136A22391EA40034C5A5 /* main.m */; };
 		666C137522391EA40034C5A5 /* FanRACExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 666C137422391EA40034C5A5 /* FanRACExtensionsTests.m */; };
 		666C138022391EA40034C5A5 /* FanRACExtensionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 666C137F22391EA40034C5A5 /* FanRACExtensionsUITests.m */; };
+		666C1390223A06B90034C5A5 /* FanRACViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 666C138F223A06B90034C5A5 /* FanRACViewModel.m */; };
+		666C1394223A3BF40034C5A5 /* FanLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 666C1393223A3BF40034C5A5 /* FanLoginViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51043C2725A9C663D64C1757 /* Pods-FanRACExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FanRACExtensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-FanRACExtensions/Pods-FanRACExtensions.release.xcconfig"; sourceTree = "<group>"; };
+		662F3EAE22422C1C0050C9A1 /* CommonHead.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHead.pch; sourceTree = "<group>"; };
+		662F3EAF224338E70050C9A1 /* FanAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FanAPIManager.h; sourceTree = "<group>"; };
+		662F3EB0224338E70050C9A1 /* FanAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanAPIManager.m; sourceTree = "<group>"; };
+		662F3EB222433AD30050C9A1 /* FanAppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FanAppManager.h; sourceTree = "<group>"; };
+		662F3EB322433AD30050C9A1 /* FanAppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanAppManager.m; sourceTree = "<group>"; };
+		662F3EB5224343310050C9A1 /* AFHTTPSessionManager+FanRACExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+FanRACExtension.h"; sourceTree = "<group>"; };
+		662F3EB6224343310050C9A1 /* AFHTTPSessionManager+FanRACExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+FanRACExtension.m"; sourceTree = "<group>"; };
 		666C135822391EA30034C5A5 /* FanRACExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanRACExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		666C135B22391EA30034C5A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		666C135C22391EA30034C5A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +65,12 @@
 		666C137B22391EA40034C5A5 /* FanRACExtensionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanRACExtensionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		666C137F22391EA40034C5A5 /* FanRACExtensionsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanRACExtensionsUITests.m; sourceTree = "<group>"; };
 		666C138122391EA40034C5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		666C138E223A06B90034C5A5 /* FanRACViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FanRACViewModel.h; sourceTree = "<group>"; };
+		666C138F223A06B90034C5A5 /* FanRACViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanRACViewModel.m; sourceTree = "<group>"; };
+		666C1392223A3BF40034C5A5 /* FanLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FanLoginViewModel.h; sourceTree = "<group>"; };
+		666C1393223A3BF40034C5A5 /* FanLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanLoginViewModel.m; sourceTree = "<group>"; };
+		7956F7F5E07CB0C4FE5A0281 /* Pods-FanRACExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FanRACExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FanRACExtensions/Pods-FanRACExtensions.debug.xcconfig"; sourceTree = "<group>"; };
+		D57406FCEF3B60626E2E6833 /* Pods_FanRACExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FanRACExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496DAE86D905D0AC1F67D5B5 /* Pods_FanRACExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54689EBC3FAAD2B9C37B8307 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D57406FCEF3B60626E2E6833 /* Pods_FanRACExtensions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		666C134F22391EA30034C5A5 = {
 			isa = PBXGroup;
 			children = (
+				666C138D22391EDC0034C5A5 /* Classes */,
 				666C135A22391EA30034C5A5 /* FanRACExtensions */,
 				666C137322391EA40034C5A5 /* FanRACExtensionsTests */,
 				666C137E22391EA40034C5A5 /* FanRACExtensionsUITests */,
 				666C135922391EA30034C5A5 /* Products */,
+				B759C2D08EC62649E9E180FD /* Pods */,
+				54689EBC3FAAD2B9C37B8307 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +133,12 @@
 		666C135A22391EA30034C5A5 /* FanRACExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				666C1391223A07310034C5A5 /* FanMVVM */,
 				666C135B22391EA30034C5A5 /* AppDelegate.h */,
 				666C135C22391EA30034C5A5 /* AppDelegate.m */,
 				666C135E22391EA30034C5A5 /* ViewController.h */,
 				666C135F22391EA30034C5A5 /* ViewController.m */,
+				662F3EAE22422C1C0050C9A1 /* CommonHead.pch */,
 				666C136122391EA30034C5A5 /* Main.storyboard */,
 				666C136422391EA40034C5A5 /* Assets.xcassets */,
 				666C136622391EA40034C5A5 /* LaunchScreen.storyboard */,
@@ -132,6 +166,39 @@
 			path = FanRACExtensionsUITests;
 			sourceTree = "<group>";
 		};
+		666C138D22391EDC0034C5A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				666C138E223A06B90034C5A5 /* FanRACViewModel.h */,
+				666C138F223A06B90034C5A5 /* FanRACViewModel.m */,
+				662F3EB5224343310050C9A1 /* AFHTTPSessionManager+FanRACExtension.h */,
+				662F3EB6224343310050C9A1 /* AFHTTPSessionManager+FanRACExtension.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		666C1391223A07310034C5A5 /* FanMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				666C1392223A3BF40034C5A5 /* FanLoginViewModel.h */,
+				666C1393223A3BF40034C5A5 /* FanLoginViewModel.m */,
+				662F3EAF224338E70050C9A1 /* FanAPIManager.h */,
+				662F3EB0224338E70050C9A1 /* FanAPIManager.m */,
+				662F3EB222433AD30050C9A1 /* FanAppManager.h */,
+				662F3EB322433AD30050C9A1 /* FanAppManager.m */,
+			);
+			path = FanMVVM;
+			sourceTree = "<group>";
+		};
+		B759C2D08EC62649E9E180FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7956F7F5E07CB0C4FE5A0281 /* Pods-FanRACExtensions.debug.xcconfig */,
+				51043C2725A9C663D64C1757 /* Pods-FanRACExtensions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 666C138422391EA40034C5A5 /* Build configuration list for PBXNativeTarget "FanRACExtensions" */;
 			buildPhases = (
+				369E2EB466981AE816B256D4 /* [CP] Check Pods Manifest.lock */,
 				666C135422391EA30034C5A5 /* Sources */,
 				666C135522391EA30034C5A5 /* Frameworks */,
 				666C135622391EA30034C5A5 /* Resources */,
+				693CEB746237C331FDEF8904 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +326,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		369E2EB466981AE816B256D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FanRACExtensions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		693CEB746237C331FDEF8904 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FanRACExtensions/Pods-FanRACExtensions-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FanKit/FanKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FanKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBJson.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FanRACExtensions/Pods-FanRACExtensions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		666C135422391EA30034C5A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +380,12 @@
 			files = (
 				666C136022391EA30034C5A5 /* ViewController.m in Sources */,
 				666C136B22391EA40034C5A5 /* main.m in Sources */,
+				662F3EB7224343310050C9A1 /* AFHTTPSessionManager+FanRACExtension.m in Sources */,
+				662F3EB422433AD30050C9A1 /* FanAppManager.m in Sources */,
+				666C1394223A3BF40034C5A5 /* FanLoginViewModel.m in Sources */,
 				666C135D22391EA30034C5A5 /* AppDelegate.m in Sources */,
+				662F3EB1224338E70050C9A1 /* FanAPIManager.m in Sources */,
+				666C1390223A06B90034C5A5 /* FanRACViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +554,12 @@
 		};
 		666C138522391EA40034C5A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7956F7F5E07CB0C4FE5A0281 /* Pods-FanRACExtensions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NW3X9NZ9UP;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FanRACExtensions/CommonHead.pch";
 				INFOPLIST_FILE = FanRACExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,10 +573,12 @@
 		};
 		666C138622391EA40034C5A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51043C2725A9C663D64C1757 /* Pods-FanRACExtensions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NW3X9NZ9UP;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FanRACExtensions/CommonHead.pch";
 				INFOPLIST_FILE = FanRACExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
